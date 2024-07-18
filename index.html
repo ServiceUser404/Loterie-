@@ -136,6 +136,13 @@
             margin-top: 10px;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("add-to-cart-btn").addEventListener("click", function() {
+                window.location.href = "index1.html";
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -174,7 +181,7 @@
         </div>
         <div class="right-column">
             <div class="price">Offre gratuite <span class="final-price">00 €</span></div>
-            <a href="#" class="add-to-cart">Ajouter au panier</a>
+            <a id="add-to-cart-btn" href="#" class="add-to-cart">Ajouter au panier</a>
         </div>
     </div>
 

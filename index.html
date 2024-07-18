@@ -136,13 +136,6 @@
             margin-top: 10px;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("add-to-cart-btn").addEventListener("click", function() {
-                window.location.href = "index1.html";
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -180,8 +173,9 @@
             <div class="iphone-storage">512 Go</div>
         </div>
         <div class="right-column">
-            <div class="price">Offre gratuite <span class="final-price">00 €</span></div>
-            <a id="add-to-cart-btn" href="#" class="add-to-cart">Ajouter au panier</a>
+            <form action="index1.html">
+                <button type="submit" class="add-to-cart">Ajouter au panier</button>
+            </form>
         </div>
     </div>
 
